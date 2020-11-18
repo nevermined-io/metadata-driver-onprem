@@ -19,7 +19,7 @@ with open('HISTORY.md') as history_file:
 install_requirements = [
     'coloredlogs',
     'PyYAML>=4.2b1',
-    'osmosis-driver-interface==0.0.6',
+    'nevermined-metadata-driver-interface>=0.1.0',
 ]
 
 # Required to run setup.py:
@@ -77,12 +77,12 @@ setup(
     long_description_content_type="text/markdown",
     include_package_data=True,
     keywords='nevermined-metadata-driver-onprem',
-    name='onevermined-metadata-driver-onprem',
+    name='nevermined-metadata-driver-onprem',
     packages=packages,
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/nevermined-io/metadata-driver-onprem',
-    version='0.0.6',
+    version='0.1.0',
     zip_safe=False,
 )
