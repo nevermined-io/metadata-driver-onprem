@@ -5,7 +5,7 @@
 > 💧 Metadata On-Premise Driver Implementation
 > [nevermined-io](https://nevermined.io)
 
-[![PyPI](https://img.shields.io/pypi/v/nevermined-metadata-driver-onprem.svg)](https://pypi.org/project/nevermined-sdk-py/)
+[![PyPI](https://img.shields.io/pypi/v/nevermined-metadata-driver-onprem.svg)](https://pypi.org/project/nevermined-metadata-driver-onprem/)
 [![Python package](https://github.com/nevermined-io/metadata-driver-onprem/workflows/Python%20package/badge.svg)](https://github.com/nevermined-io/metadata-driver-onprem/actions)
 
 ---
