@@ -1,25 +1,24 @@
-[![banner](https://raw.githubusercontent.com/oceanprotocol/art/master/github/repo-banner%402x.png)](https://oceanprotocol.com)
+[![banner](https://raw.githubusercontent.com/nevermined-io/assets/main/images/logo/banner_logo.png)](https://nevermined.io)
 
-# osmosis-on-premise-driver
+# Metadata On-Premise Driver
 
-> 💧 Osmosis On-Premise Driver Implementation
-> [oceanprotocol.com](https://oceanprotocol.com)
+> 💧 Metadata On-Premise Driver Implementation
+> [nevermined-io](https://nevermined.io)
 
-[![PyPI](https://img.shields.io/pypi/v/osmosis-on-premise-driver.svg)](https://pypi.org/project/osmosis-on-premise-driver/)
-[![Build Status](https://travis-ci.com/oceanprotocol/osmosis-on-premise-driver.svg)](https://travis-ci.com/oceanprotocol/osmosis-on-premise-driver)
-[![GitHub contributors](https://img.shields.io/github/contributors/oceanprotocol/osmosis-on-premise-driver.svg)](https://github.com/oceanprotocol/osmosis-on-premise-driver/graphs/contributors)
-[![Codacy Badge](https://img.shields.io/codacy/grade/ad7aaa0326584eb0b52d69b0a36474bb.svg)](https://app.codacy.com/project/ocean-protocol/osmosis-on-premise-driver/dashboard)
-[![Codacy coverage](https://img.shields.io/codacy/coverage/ad7aaa0326584eb0b52d69b0a36474bb.svg)](https://app.codacy.com/project/ocean-protocol/osmosis-on-premise-driver/dashboard)
+[![PyPI](https://img.shields.io/pypi/v/nevermined-metadata-driver-onprem.svg)](https://pypi.org/project/nevermined-sdk-py/)
+[![Python package](https://github.com/nevermined-io/metadata-driver-onprem/workflows/Python%20package/badge.svg)](https://github.com/nevermined-io/metadata-driver-onprem/actions)
 
 ---
 
 ## Table of Contents
 
-- [Setup](#setup)
-- [Code Style](#code-style)
-- [Testing](#testing)
-- [New Version](#new-version)
-- [License](#license)
+- [Metadata On-Premise Driver](#metadata-on-premise-driver)
+  - [Table of Contents](#table-of-contents)
+  - [Setup](#setup)
+  - [Testing](#testing)
+  - [New Version](#new-version)
+  - [Attribution](#attribution)
+  - [License](#license)
 
 ---
 
@@ -27,10 +26,6 @@
 
 You don't have to set any Brizo configuration settings or other configuration settings to use on-premise storage with Brizo. You just need to make sure that Brizo can resolve the file URLs. For more details, see [the tutorial about setting up on-premise storage](https://docs.oceanprotocol.com/tutorials/on-premise-for-brizo/).
 
-## Code Style
-
-Information about our Python code style is documented in this the [python-developer-guide](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/python-developer-guide.md)
-and the [python-style-guide](https://github.com/oceanprotocol/dev-ocean/blob/master/doc/development/python-style-guide.md).
 
 ## Testing
 
@@ -41,10 +36,17 @@ Our tests use the pytest framework.
 
 The `bumpversion.sh` script helps to bump the project version. You can execute the script using as first argument {major|minor|patch} to bump accordingly the version.
 
+## Attribution
+
+This project is based in the Ocean Protocol [osmosis-on-premise-driver](https://github.com/oceanprotocol/osmosis-on-premise-driver).
+It keeps the same Apache v2 License and adds some improvements. See [NOTICE file](NOTICE).
+
 ## License
 
-```text
-Copyright 2018 Ocean Protocol Foundation Ltd.
+```
+Copyright 2020 Keyko GmbH
+This product includes software developed at
+BigchainDB GmbH and Ocean Protocol (https://www.oceanprotocol.com/)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -3,9 +3,6 @@
 
 """The setup script."""
 
-#  Copyright 2018 Ocean Protocol Foundation
-#  SPDX-License-Identifier: Apache-2.0
-
 from setuptools import setup
 import os
 from os.path import join
@@ -22,7 +19,7 @@ with open('HISTORY.md') as history_file:
 install_requirements = [
     'coloredlogs',
     'PyYAML>=4.2b1',
-    'osmosis-driver-interface==0.0.6',
+    'nevermined-metadata-driver-interface>=0.1.0',
 ]
 
 # Required to run setup.py:
@@ -53,13 +50,13 @@ docs_requirements = [
 ]
 
 packages = []
-for d, _, _ in os.walk('osmosis_on_premise_driver'):
+for d, _, _ in os.walk('metadata_driver_onprem'):
     if os.path.exists(join(d, '__init__.py')):
         packages.append(d.replace(os.path.sep, '.'))
 
 setup(
-    author="leucothia",
-    author_email='devops@oceanprotocol.com',
+    author="nevermined-io",
+    author_email='root@nevermined.io',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -68,7 +65,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="💧 Osmosis On Premise Driver Implementation",
+    description="💧 Metadata On Premise Driver Implementation",
     extras_require={
         'test': test_requirements,
         'dev': dev_requirements + test_requirements + docs_requirements,
@@ -79,13 +76,13 @@ setup(
     long_description=readme,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords='osmosis-on-premise-driver',
-    name='osmosis-on-premise-driver',
+    keywords='nevermined-metadata-driver-onprem',
+    name='nevermined-metadata-driver-onprem',
     packages=packages,
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/oceanprotocol/osmosis-on-premise-driver',
-    version='0.0.6',
+    url='https://github.com/nevermined-io/metadata-driver-onprem',
+    version='0.1.0',
     zip_safe=False,
 )
