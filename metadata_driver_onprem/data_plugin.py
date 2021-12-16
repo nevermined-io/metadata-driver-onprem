@@ -12,7 +12,13 @@ class Plugin(AbstractPlugin):
     def upload(self, local_file, remote_file):
         pass
 
+    def upload_bytes(self, content, file_name):
+        pass
+
     def download(self, remote_file, local_file):
+        pass
+
+    def download_bytes(self, remote_file):
         pass
 
     def list(self, remote_folder):
